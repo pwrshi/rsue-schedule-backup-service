@@ -21,6 +21,8 @@ jobs:
 
       - name: Install dependencies
         run: dart pub get
+      - name: Make dist dir
+        run: mkdir dist
       - name: Backup process
         run: dart run
       - name: Deploy to Netlify
